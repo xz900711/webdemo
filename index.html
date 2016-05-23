@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="imagetoolbar" content="no">
+    <meta name="baidu-site-verification" content="v3VQy9IETY" />
+    <meta name="copyright" content="2015-2016 XXXXXBBS.com">
+    <title>发新帖子-5X兴趣社区</title>
+    <script type="text/javascript" charset="utf-8" src="js/jq.js?v=2016020"></script>
+    <script type="text/javascript" charset="utf-8" src="js/general.js?v=2016020"></script>
+    
+	<link rel="stylesheet" type="text/css" href="css/pubThread.css?v=2016020">	
+	
+
+    <link href="/favicon.ico" mce_href="/favicon.ico" rel="bookmark" type="image/x-icon"/>
+    <link href="/favicon.ico" mce_href="/favicon.ico" rel="icon" type="image/x-icon"/>
+    <link href="/favicon.ico" mce_href="/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+    <link rel="stylesheet" type="text/css" href="css/general.css?v=2016020">
+</head>
+
+<body>
+<input type="hidden" id="myid" value="106118">
+<input type="hidden" id="myidisadmin" value="0">
+  
+<input type="hidden" id="domain" value="http://imageqiniu.xxxxxbbs.com/">
+<input type="hidden" id="uptoken_url" value="/thread/vtoken">
+<input type="hidden" id="uptoken_url1" value="/thread/itoken">
+<input type="hidden" id="threadId" value=""/>
+<!-- 拖拽排序层 -->
+<div class="sort-layer">
+	<h3>
+		<ul class="btn-list">
+			<li><a href="javascript:;" class="sort-layer-delete-gray"><i></i>批量删除</a></li>
+			<li><a href="javascript:;" class="sort-layer-cancel">取消</a></li>
+			<li><a href="javascript:;" class="sort-layer-save">保存</a></li>
+		</ul>
+		拖拽即可调整文字、照片、视频顺序
+		<span>Tips：可点击多选后，批量调整。</span>
+	</h3>
+	<div class="sort-layer-box">		
+		<div class="txt-show">
+				<span><em></em><i></i></span>
+				<p></p>
+		</div>
+		<ol class="sort-layer-list">
+	
+		</ol>
+	</div>
+	<div class="clear"></div>
+	<a href="javascript:;" id="save-sort">保存</a>
+</div>
+<!-- 上传进度层 -->
+<div class="upload-layer">
+	<div class="upload-layer-box">
+		<span class="percentage"><em>0</em>%</span>
+		<span class="text">正在处理图片，请您稍等...</span>
+		<span class="files-count">(<em>0</em>/<i>0</i>)</span>
+		<div class="progressing-bar">
+			<div class="progressing"></div>
+		</div>
+		<a href="javascript:;" class="cancel">取消</a>
+	</div>
+</div>
+<!-- 提示信息层 -->
+
+<div id="container" class="pubThreadContainer">
+	<div class="left">
+		<div class="title-box">
+			<input type="text" class="thread-title" placeholder="在这里输入标题，标题长度为6-30个文字">
+			<div class="thread-resource-interest">
+				<a href="javascript:;" class="resource-btn resourceChoice-curr" data-value='1'>原创</a>
+				<a href="javascript:;" class="resource-btn" data-value='2'>转载</a>
+				
+				<div class="char-limit"><em>请输入帖子标题</em> <i></i> <b></b></div>
+				<a href="javascript:;" class="add-interest-btn"><span><i></i><i></i><i></i></span>添加所属兴趣</a>
+				<ul class="interest-label-list">
+				</ul>
+				<ul class="interest-list">
+					<span><em></em><i></i></span>
+					<a href="javascript:;" class="remove">×</a></li> 
+					
+					<li>
+						<div class="small-list">
+							<ul> 
+							           
+						    <li><a href="javascript:;" id="79">无人机/航拍</a></li>
+						               
+						    <li><a href="javascript:;" id="80">秀手机/平板</a></li>
+						               
+						    <li><a href="javascript:;" id="81">秀电脑硬件/外设</a></li>
+						               
+						    <li><a href="javascript:;" id="82">极限相机</a></li>
+						               
+						    <li><a href="javascript:;" id="83">相机/摄影</a></li>
+						               
+						    <li><a href="javascript:;" id="84">最新电子产品</a></li>
+						               
+						    <li><a href="javascript:;" id="85">天文摄影</a></li>
+						               
+						    <li><a href="javascript:;" id="86">前沿科技</a></li>
+						    
+							</ul>
+						</div>
+						<a href="javascript:;">数码/科技</a>
+					</li>  
+					
+					<li>
+						<div class="small-list">
+							<ul> 
+							           
+						    <li><a href="javascript:;" id="66">秀旅行</a></li>
+						               
+						    <li><a href="javascript:;" id="93">秀闺蜜</a></li>
+						               
+						    <li><a href="javascript:;" id="94">秀宠物</a></li>
+						               
+						    <li><a href="javascript:;" id="95">秀美食</a></li>
+						               
+						    <li><a href="javascript:;" id="96">秀身材</a></li>
+						               
+						    <li><a href="javascript:;" id="97">秀化妆品</a></li>
+						               
+						    <li><a href="javascript:;" id="98">秀奢侈品</a></li>
+						               
+						    <li><a href="javascript:;" id="99">秀手表</a></li>
+						               
+						    <li><a href="javascript:;" id="100">秀文玩/收藏</a></li>
+						               
+						    <li><a href="javascript:;" id="101">秀家装/装饰</a></li>
+						               
+						    <li><a href="javascript:;" id="102">秀音乐/乐器</a></li>
+						               
+						    <li><a href="javascript:;" id="103">秀音响/耳机</a></li>
+						               
+						    <li><a href="javascript:;" id="104">秀夜生活</a></li>
+						               
+						    <li><a href="javascript:;" id="105">秀纹身</a></li>
+						               
+						    <li><a href="javascript:;" id="106">秀游艇</a></li>
+						               
+						    <li><a href="javascript:;" id="119">秀婚纱/婚礼</a></li>
+						               
+						    <li><a href="javascript:;" id="122">手工/绘画</a></li>
+						               
+						    <li><a href="javascript:;" id="123">影视分享</a></li>
+						               
+						    <li><a href="javascript:;" id="124">秀服饰/首饰</a></li>
+						               
+						    <li><a href="javascript:;" id="126">儿童乐园</a></li>
+						               
+						    <li><a href="javascript:;" id="127">EDC每日携带</a></li>
+						               
+						    <li><a href="javascript:;" id="129">文具/办公用品</a></li>
+						    
+							</ul>
+						</div>
+						<a href="javascript:;">时尚/生活</a>
+					</li>  
+					
+					<li>
+						<div class="small-list">
+							<ul> 
+							           
+						    <li><a href="javascript:;" id="74">遥控车</a></li>
+						               
+						    <li><a href="javascript:;" id="75">遥控船</a></li>
+						               
+						    <li><a href="javascript:;" id="76">遥控飞机</a></li>
+						               
+						    <li><a href="javascript:;" id="77">玩具/模型</a></li>
+						    
+							</ul>
+						</div>
+						<a href="javascript:;">遥控/模型</a>
+					</li>  
+					
+					<li>
+						<div class="small-list">
+							<ul> 
+							           
+						    <li><a href="javascript:;" id="63">拍汽车</a></li>
+						               
+						    <li><a href="javascript:;" id="64">秀摩托车</a></li>
+						               
+						    <li><a href="javascript:;" id="65">卡丁车</a></li>
+						               
+						    <li><a href="javascript:;" id="67">行车实录</a></li>
+						               
+						    <li><a href="javascript:;" id="68">赛车</a></li>
+						               
+						    <li><a href="javascript:;" id="69">汽摩越野</a></li>
+						               
+						    <li><a href="javascript:;" id="70">全地形车</a></li>
+						    
+							</ul>
+						</div>
+						<a href="javascript:;">汽车/摩托车</a>
+					</li>  
+					
+					<li>
+						<div class="small-list">
+							<ul> 
+							           
+						    <li><a href="javascript:;" id="1">足球/足球鞋</a></li>
+						               
+						    <li><a href="javascript:;" id="2">篮球/篮球鞋</a></li>
+						               
+						    <li><a href="javascript:;" id="3">羽毛球</a></li>
+						               
+						    <li><a href="javascript:;" id="4">乒乓球</a></li>
+						               
+						    <li><a href="javascript:;" id="5">网球</a></li>
+						               
+						    <li><a href="javascript:;" id="6">台球</a></li>
+						               
+						    <li><a href="javascript:;" id="7">保龄球</a></li>
+						               
+						    <li><a href="javascript:;" id="8">棒垒球</a></li>
+						               
+						    <li><a href="javascript:;" id="9">橄榄球</a></li>
+						               
+						    <li><a href="javascript:;" id="10">壁球</a></li>
+						               
+						    <li><a href="javascript:;" id="11">高尔夫球</a></li>
+						    
+							</ul>
+						</div>
+						<a href="javascript:;">球类运动</a>
+					</li>  
+					
+					<li>
+						<div class="small-list">
+							<ul> 
+							           
+						    <li><a href="javascript:;" id="14">瑜伽</a></li>
+						               
+						    <li><a href="javascript:;" id="16">武术</a></li>
+						               
+						    <li><a href="javascript:;" id="17">舞蹈</a></li>
+						               
+						    <li><a href="javascript:;" id="117">健身</a></li>
+						    
+							</ul>
+						</div>
+						<a href="javascript:;">健身运动</a>
+					</li>  
+					
+					<li>
+						<div class="small-list">
+							<ul> 
+							           
+						    <li><a href="javascript:;" id="18">游泳</a></li>
+						               
+						    <li><a href="javascript:;" id="19">潜水</a></li>
+						               
+						    <li><a href="javascript:;" id="20">帆板</a></li>
+						               
+						    <li><a href="javascript:;" id="21">帆船</a></li>
+						               
+						    <li><a href="javascript:;" id="22">皮划艇</a></li>
+						               
+						    <li><a href="javascript:;" id="23">快艇/摩托艇</a></li>
+						               
+						    <li><a href="javascript:;" id="24">漂流</a></li>
+						               
+						    <li><a href="javascript:;" id="25">风筝冲浪</a></li>
+						               
+						    <li><a href="javascript:;" id="26">戏水</a></li>
+						    
+							</ul>
+						</div>
+						<a href="javascript:;">水上运动</a>
+					</li>  
+					
+					<li>
+						<div class="small-list">
+							<ul> 
+							           
+						    <li><a href="javascript:;" id="27">单板滑雪</a></li>
+						               
+						    <li><a href="javascript:;" id="28">双板滑雪</a></li>
+						               
+						    <li><a href="javascript:;" id="29">滑冰</a></li>
+						               
+						    <li><a href="javascript:;" id="30">攀冰</a></li>
+						               
+						    <li><a href="javascript:;" id="31">雪地摩托</a></li>
+						               
+						    <li><a href="javascript:;" id="32">冰球</a></li>
+						               
+						    <li><a href="javascript:;" id="33">戏雪</a></li>
+						    
+							</ul>
+						</div>
+						<a href="javascript:;">冰雪运动</a>
+					</li>  
+					
+					<li>
+						<div class="small-list">
+							<ul> 
+							           
+						    <li><a href="javascript:;" id="48">徒步穿越</a></li>
+						               
+						    <li><a href="javascript:;" id="49">跑步/跑鞋</a></li>
+						               
+						    <li><a href="javascript:;" id="50">登山</a></li>
+						               
+						    <li><a href="javascript:;" id="51">露营</a></li>
+						               
+						    <li><a href="javascript:;" id="52">骑马</a></li>
+						               
+						    <li><a href="javascript:;" id="53">自行车骑行</a></li>
+						               
+						    <li><a href="javascript:;" id="54">垂钓</a></li>
+						               
+						    <li><a href="javascript:;" id="55">射箭</a></li>
+						               
+						    <li><a href="javascript:;" id="56">射击</a></li>
+						               
+						    <li><a href="javascript:;" id="57">马拉松</a></li>
+						               
+						    <li><a href="javascript:;" id="61">真人CS</a></li>
+						               
+						    <li><a href="javascript:;" id="62">户外装备</a></li>
+						               
+						    <li><a href="javascript:;" id="118">探险/探洞</a></li>
+						    
+							</ul>
+						</div>
+						<a href="javascript:;">户外运动</a>
+					</li>  
+					
+					<li>
+						<div class="small-list">
+							<ul> 
+							           
+						    <li><a href="javascript:;" id="34">滑板</a></li>
+						               
+						    <li><a href="javascript:;" id="35">长板</a></li>
+						               
+						    <li><a href="javascript:;" id="36">轮滑</a></li>
+						               
+						    <li><a href="javascript:;" id="37">跑酷</a></li>
+						               
+						    <li><a href="javascript:;" id="38">BMX</a></li>
+						               
+						    <li><a href="javascript:;" id="39">攀爬自行车</a></li>
+						               
+						    <li><a href="javascript:;" id="40">速降自行车</a></li>
+						               
+						    <li><a href="javascript:;" id="41">跳伞</a></li>
+						               
+						    <li><a href="javascript:;" id="42">滑翔伞</a></li>
+						               
+						    <li><a href="javascript:;" id="43">蹦极</a></li>
+						               
+						    <li><a href="javascript:;" id="44">翼装飞行</a></li>
+						               
+						    <li><a href="javascript:;" id="45">攀岩</a></li>
+						               
+						    <li><a href="javascript:;" id="46">建筑物攀爬</a></li>
+						               
+						    <li><a href="javascript:;" id="47">定向越野</a></li>
+						    
+							</ul>
+						</div>
+						<a href="javascript:;">极限运动</a>
+					</li>  
+					
+					<li>
+						<div class="small-list">
+							<ul> 
+							           
+						    <li><a href="javascript:;" id="71">秀头等舱</a></li>
+						               
+						    <li><a href="javascript:;" id="72">飞机模拟舱</a></li>
+						               
+						    <li><a href="javascript:;" id="73">秀开飞机</a></li>
+						    
+							</ul>
+						</div>
+						<a href="javascript:;">空中飞行</a>
+					</li>  
+					
+					<li>
+						<div class="small-list">
+							<ul> 
+							           
+						    <li><a href="javascript:;" id="89">海陆空作战武器</a></li>
+						               
+						    <li><a href="javascript:;" id="90">枪械</a></li>
+						               
+						    <li><a href="javascript:;" id="91">冷兵器</a></li>
+						               
+						    <li><a href="javascript:;" id="92">弓/弩</a></li>
+						    
+							</ul>
+						</div>
+						<a href="javascript:;">军事武器</a>
+					</li>  
+					
+					<li>
+						<div class="small-list">
+							<ul> 
+							           
+						    <li><a href="javascript:;" id="107">NB酒店写真</a></li>
+						               
+						    <li><a href="javascript:;" id="108">秀少见职业/NB办公室</a></li>
+						               
+						    <li><a href="javascript:;" id="109">秀公司福利/年会</a></li>
+						               
+						    <li><a href="javascript:;" id="110">Cosplay</a></li>
+						               
+						    <li><a href="javascript:;" id="111">电子竞技</a></li>
+						               
+						    <li><a href="javascript:;" id="112">仿真人偶</a></li>
+						               
+						    <li><a href="javascript:;" id="113">拍火车</a></li>
+						               
+						    <li><a href="javascript:;" id="114">拍飞机</a></li>
+						               
+						    <li><a href="javascript:;" id="116">我们也不知道如何分类</a></li>
+						               
+						    <li><a href="javascript:;" id="121">帮帮忙</a></li>
+						               
+						    <li><a href="javascript:;" id="125">二手货</a></li>
+						    
+							</ul>
+						</div>
+						<a href="javascript:;">其他分类</a>
+					</li>  
+					     
+				</ul>
+				<div class="interest-list-layer"></div>
+			</div>
+		</div>
+		<span class="add-model">
+			<div class="add-model-box">
+				<div class="intro">
+					<h5>点击右侧按钮，添加相对应的元素模块</h5>
+					<h6>还不太会用？看看<a href="/html/pub-thread-course.html" target="_blank">发帖教程</a></h6>
+				</div>
+				<div class="btn-box">
+					<a href="javascript:;" class="add-txt-btn" id="add-txt"><i></i>添加文字</a>
+					<a href="javascript:;" class="add-img-btn" id="add-img"><i></i>添加图片</a>
+					<a href="javascript:;" class="add-video-btn" id="add-video"><i></i>添加视频</a>
+				</div>
+			</div>
+		</span>
+		<div class="add-img-box">
+			<div class="close-area"><a href="javascript:;" class="close" onclick="$(this).parents('.add-img-box').slideUp(200);"><i></i>收起</a></div>
+			<div class="QRcode">
+				<div class="QRcode-box" id="qrcode"></div>
+				<h5>上传手机图片</h5>
+				<span>扫描二维码即刻上传手机相册照片</span>
+			</div>
+			<div class="upload">
+				<a href="javascript:;" id="pickfiles-img">上传本地图片</a>
+				<span>上传图片最多为1000张，单张容量小于20M</span>
+				<a href="#" class="upload-warning">上传注意事项</a>
+			</div>
+		</div>
+		<div class="add-video-box">
+			<div class="close-area"><a href="javascript:;" class="close" onclick="$(this).parents('.add-video-box').slideUp(200);"><i></i>收起</a></div>
+			<div class="outside-video">
+				<h5>输入视频地址，目前暂时只支持优酷</h5>
+				<input type="text" id="outside-video-input" />
+				<div class="save-outside-box">
+					<a href="javascript:;" id="save-outside-video">确认</a>
+				</div>
+			</div>
+			<div class="upload">
+				<a href="javascript:;" id="pickfiles-video">上传本地视频</a>
+				<span>上传视频最多为10个，单个视频小于2G</span>
+				<a href="#" class="upload-warning">上传注意事项</a>
+			</div>
+		</div>
+		<ol class="thread-content-list">
+		</ol>
+	</div>
+
+	<div class="right">
+		<div class="right-area">
+			<div class="pub-box">
+				<a href="javascript:void(0);" id="save-thread-btn">保存</a>
+				<a href="javascript:void(0);" id="pub-thread-btn">发布</a>	
+			</div>
+			<div class="thumbnail">	
+				<div class="txt-show">
+					<span><em></em><i></i></span>
+					<p></p>
+				</div>
+				<h3>
+					调整顺序
+					<!-- <a href="javascript:;" id="open-sortable-layer">开始编辑</a> -->
+					<span>可以让您更快速的给文字、图片、视频进行排序</span>
+				</h3>
+				<div class="thumbnail-box">
+					<ol>
+	<!-- 					<li id="thumb1"><a href="javascript:;"><em class="emReorder">1</em><img src="http://7xk8am.com2.z0.glb.qiniucdn.com/Flxcy2A7nPJnH54DoVDVRFhlLcFr?imageMogr2/auto-orient/thumbnail/!124x82r/gravity/Center/crop/124x82/quality/100"></a></li>
+						<li id="thumb2"><a href="javascript:;"><i class="play"></i><div class="play-box"></div><em class="emReorder">2</em><img src="images/transcode-small.png"></a></li>					
+						<li id="thumb3"><a href="javascript:;"><em class="emReorder">3</em><img src="images/pubThread-txt.png"></a></li> -->
+					</ol>
+				</div>
+				<a href="javascript:;" id="open-sortable-layer-btn">点此调整模块顺序</a>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript" src="js/plugin/upload.js"></script>
+<script type="text/javascript" src="js/pubThread.js?v=2016020"></script>
+<script type="text/javascript">
+	    //====================创建二维码==========================//
+	$('#qrcode').qrcode({
+	   text	: "http://m.xxxxxbbs.com/th/qrcode/eHh4eHhiYnNjb21pbnRzcGFya2NvbV8xNDYzNzI1OTAzNDg2XzEwNjExOA==",
+	   width : 100,
+	   height : 100
+	});
+</script>
+
+
+
+</body>
+</html>
